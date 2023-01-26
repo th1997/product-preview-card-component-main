@@ -9,9 +9,6 @@
 body{ 
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     min-height: 100vh;
     margin: 0;
 }
@@ -21,6 +18,7 @@ main{
     border-radius: 10px 10px;
     margin-left: 5%;
     margin-right: 5%;
+    margin-top: 10%;
     overflow: hidden
 }
 
@@ -34,8 +32,29 @@ main{
 .informations{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    margin: 7%;
+    justify-content: space-around;
+    margin: 8.5%;
+}
+
+.type, .desc_card, .title_card, .price{
+    margin-bottom: 4%;
+}
+
+.desc_card{ line-height: 1.5; }
+
+.price{
+    display: flex;
+    align-items: center;
+}
+
+.big_price{
+    text-decoration:line-through;
+    margin-left: 7%;
+}
+
+.actual_price{
+    color: hsl(158, 36%, 37%);
+    font-size: 2em;
 }
 
 .type, .desc_card, .big_price{
@@ -47,7 +66,21 @@ h1, .actual_price{
     font-family: 'Fraunces', sans-serif;
 }
 
+button p{
+    margin-left: 3%;
+    font-weight: bold;
+    font-size: 1.1em;
+}
 
+button{
+    display: flex;
+    justify-content: center;
+    background-color: hsl(158, 36%, 37%);
+    color: white;
+    border-radius: 10px 10px;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
 
 footer { 
     position: absolute;
