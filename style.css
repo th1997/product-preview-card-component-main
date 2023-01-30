@@ -10,7 +10,7 @@ body{
     background-color: hsl(30, 38%, 92%);
     font-family: 'Montserrat', sans-serif;
     min-height: 100vh;
-    margin: 0;
+    overflow: hidden;
 }
 
 main{
@@ -32,12 +32,14 @@ main{
 .informations{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin: 8.5%;
 }
 
-.type, .desc_card, .title_card, .price{
-    margin-bottom: 4%;
+.type, .desc_card, .title_card, .price{ margin-bottom: 4%; }
+
+.title_card{
+    color: hsl(212, 21%, 14%);
+    line-height: 1;
 }
 
 .desc_card{ line-height: 1.5; }
@@ -58,13 +60,11 @@ main{
 }
 
 .type, .desc_card, .big_price{
-    font-size: 14px;
+    font-size: 0.9em;
     color: hsl(228, 12%, 48%);
 }
 
-h1, .actual_price{
-    font-family: 'Fraunces', sans-serif;
-}
+h1, .actual_price{ font-family: 'Fraunces', sans-serif; }
 
 button p{
     margin-left: 3%;
@@ -80,30 +80,48 @@ button{
     border-radius: 10px 10px;
     padding-top: 5%;
     padding-bottom: 5%;
+    border: none;
 }
+
+button:hover {
+    background-color: hsl(158, 25%, 25%);
+  }
 
 footer { 
     position: absolute;
     right: 0;
     bottom: 0;
     left: 0;
-    text-align: center;
-    color:black
+    text-align: center
 }
 
 footer a { color: hsl(228, 45%, 44%) }
 
 @media screen and (min-width: 426px){
+     
+    body{ 
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     main{
         display: flex;
         flex-direction: row;
+        margin-right: 30%;
+        margin-left: 30%;
+        margin-bottom: 7%;
     }
 
     .Card_img{
         background: url("images/image-product-desktop.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
-        padding-bottom: 37.5%;
-        padding-right: 25%;
+        padding-right: 48%;
+        padding-bottom: 0;
     }
+
+    .informations{ margin: 6.5%; }
+
+    .type, .desc_card, .title_card, .price{ margin-bottom: 9%; }
 }
