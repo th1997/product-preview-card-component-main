@@ -66,11 +66,10 @@ main{
 
 h1, .actual_price{ font-family: 'Fraunces', sans-serif; }
 
-button p{
-    margin-left: 3%;
-    font-weight: bold;
-    font-size: 1.1em;
+button img{
+    margin-right: 3%;
 }
+
 
 button{
     display: flex;
@@ -81,6 +80,8 @@ button{
     padding-top: 5%;
     padding-bottom: 5%;
     border: none;
+    font-weight: bold;
+    font-size: 0.9em;
 }
 
 button:hover {
