@@ -108,8 +108,8 @@ footer a { color: hsl(228, 45%, 44%) }
     main{
         display: flex;
         flex-direction: row;
-        margin-right: 30%;
-        margin-left: 30%;
+        margin-right: 28%;
+        margin-left: 28%;
         margin-bottom: 7%;
     }
 
@@ -117,7 +117,7 @@ footer a { color: hsl(228, 45%, 44%) }
         background: url("images/image-product-desktop.jpg");
         background-repeat: no-repeat;
         background-size: 100%;
-        padding-right: 48%;
+        padding-right: 50%;
         padding-bottom: 0;
     }
 
